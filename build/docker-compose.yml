@@ -1,0 +1,16 @@
+version: "2"
+services:
+  steam-hardware-survey:
+    build:
+      args:
+        uid: ${UID}
+        gid: ${GID}
+      context: ..
+      dockerfile: build/Dockerfile
+    image: steam-hardware-survey
+    volumes:
+      - ..:/code
+      - ..:/opt/steam-hardware-survey
+      - ~/.bash_history.steam-hardware-survey:/home/steam-hardware-survey/.bash_history
+    working_dir: /code
+    command: "/bin/true"
