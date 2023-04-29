@@ -1,4 +1,4 @@
 venv_steam_survey/
 INTERNAL.md
-
+*.csv
 **/__pycache__/
