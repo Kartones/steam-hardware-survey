@@ -1,4 +1,5 @@
 import csv
+from os import path
 import config.base
 from typing import List
 
@@ -50,7 +51,13 @@ class Scrapper:
 
     @classmethod
     def write_csv(cls, data) -> None:
-        with open(config.base.STEAM_SURVEY_CSV_FILE, "w", newline="") as csv_file_handle:
+        file_path = path.join(
+            path.dirname(path.dirname(path.abspath(__file__))),
+            "data",
+            config.base.STEAM_SURVEY_CSV_FILE
+        )
+
+        with open(file_path, "w", newline="") as csv_file_handle:
             csv_writer = csv.writer(
                 csv_file_handle,
                 delimiter=config.base.CSV_SEPARATOR,
