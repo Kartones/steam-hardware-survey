@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "steam-hardware-survey"
 version = "0.1.0"
-description = "steam-hardware survey"
+description = "steam hardware survey"
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 packages = [{include = "steam-hardware-survey"}]
