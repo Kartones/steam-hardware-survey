@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "steam-hardware-survey"
+version = "0.1.0"
+description = "steam hardware survey"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "steam-hardware-survey"}]
+
+[tool.poetry.dependencies]
+python = "^3.11.0"
+beautifulsoup4 = "4.12.2"
+requests = "2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"

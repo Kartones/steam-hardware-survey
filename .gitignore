@@ -3,3 +3,4 @@ INTERNAL.md
 *.csv
 **/__pycache__/
 .vscode/
+dist/
