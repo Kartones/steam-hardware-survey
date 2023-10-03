@@ -1,4 +1,4 @@
-FROM python:3.11
+FROM python:3.12
 
 # Define environment vars to expose to container here
 # ENV <key> <value>
