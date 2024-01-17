@@ -8,7 +8,7 @@ packages = [{include = "steam-hardware-survey"}]
 
 [tool.poetry.dependencies]
 python = "^3.11.0"
-beautifulsoup4 = "4.12.2"
+beautifulsoup4 = "4.12.3"
 requests = "2.31.0"
 
 
